@@ -15,7 +15,7 @@ toggle2 = st.container()
 
 with dataset:
     url = "https://raw.githubusercontent.com/usebien/data/main/uno/airline_500.csv"
-    data = pd.read_csv(url)
+    data = pd.read_csv(url, sep=";")
     st.write(data.head(4))
 
 with toggle1:
